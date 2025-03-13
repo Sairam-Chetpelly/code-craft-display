@@ -3,7 +3,7 @@ import { ArrowDown, Code, Github, Laptop } from "lucide-react";
 import Section from "./ui/Section";
 import AnimatedText from "./ui/AnimatedText";
 import ButtonLink from "./ui/ButtonLink";
-import { ReactComponent as Logo } from "@/assets/logo.svg";
+import Logo from "@/assets/logo.svg";
 
 export default function HeroSection() {
   return (
@@ -54,7 +54,7 @@ export default function HeroSection() {
             </div>
             <div className="h-4 w-px bg-gray-300"></div>
             <div className="flex items-center gap-2 text-muted-foreground">
-              <Logo className="w-5 h-5 text-primary" />
+              <img src={Logo} alt="Logo" className="w-5 h-5 text-primary" />
               <span>TypeScript</span>
             </div>
           </AnimatedText>
